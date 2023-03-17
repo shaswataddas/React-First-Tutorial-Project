@@ -34,4 +34,12 @@ const Expenses = (props) => {
             <Card className='expenses'>
                 <ExpensesFilter 
                     selected={selectedExpenseFilter} 
-                    
+                    onExpensesFilterSelect={expensesFilterHandler} 
+                />
+                {expenseContent}
+            </Card>
+        </div>
+    );
+};
+
+export default Expenses;
